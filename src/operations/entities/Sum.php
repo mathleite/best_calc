@@ -3,9 +3,8 @@
 namespace App\operations\entities;
 
 use App\operations\contracts\AbstractOperation;
-use App\operations\contracts\OperationInterface;
 
-class Sum extends AbstractOperation implements OperationInterface
+class Sum extends AbstractOperation
 {
     private iterable $numbers;
 
