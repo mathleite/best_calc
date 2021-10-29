@@ -12,7 +12,7 @@ class MultiplicationTest extends TestCase
      */
     public function test_foo(int|float $expectedOperationValue, ...$items)
     {
-        $operation = new Subtraction(...$items);
+        $operation = new Multiplication(...$items);
         self::assertSame($expectedOperationValue, $operation->execute());
     }
 
