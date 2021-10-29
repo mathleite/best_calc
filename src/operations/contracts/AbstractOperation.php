@@ -13,7 +13,6 @@ abstract class AbstractOperation implements OperationInterface
         }
 
         foreach ($numbers as $number) {
-
             if (!is_numeric($number)) {
                 throw new NotNumericValueException();
             }
