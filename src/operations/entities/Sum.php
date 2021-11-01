@@ -2,9 +2,9 @@
 
 namespace App\operations\entities;
 
-use App\operations\contracts\AbstractOperation;
+use App\operations\contracts\BaseOperation;
 
-class Sum extends AbstractOperation
+class Sum extends BaseOperation
 {
     private iterable $numbers;
 
