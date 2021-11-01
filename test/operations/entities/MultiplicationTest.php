@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 class MultiplicationTest extends TestCase
 {
     /**
-     * @dataProvider provideItemsAndExpectedSubtractionValue
+     * @dataProvider provideItemsAndExpectedMultiplicationValue
      */
     public function test_foo(int|float $expectedOperationValue, ...$items)
     {
@@ -16,7 +16,7 @@ class MultiplicationTest extends TestCase
         self::assertSame($expectedOperationValue, $operation->execute());
     }
 
-    public static function provideItemsAndExpectedSubtractionValue(): iterable
+    public static function provideItemsAndExpectedMultiplicationValue(): iterable
     {
         yield [8, 2, 4];
         yield [0, 10, 0];
