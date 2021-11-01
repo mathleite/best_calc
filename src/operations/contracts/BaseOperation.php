@@ -4,7 +4,7 @@ namespace App\operations\contracts;
 
 use App\operations\exceptions\NotNumericValueException;
 
-abstract class AbstractOperation implements OperationInterface
+abstract class BaseOperation implements OperationInterface
 {
     public static function initialize(iterable $numbers): iterable
     {
